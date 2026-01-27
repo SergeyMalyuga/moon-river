@@ -49,7 +49,6 @@
       display: flex;
       flex-direction: column;
       gap: 8px;
-      transition: gap 0.2s ease;
 
       &:focus {
         outline: none;
@@ -61,7 +60,13 @@
       }
 
       &:hover {
-        gap: 11px;
+        .header-main__line--top {
+          transform: translateY(-2px);
+        }
+
+        .header-main__line--bottom {
+          transform: translateY(2px);
+        }
 
         span {
             border-color: variables.$button-hover;
@@ -77,12 +82,8 @@
   }
 
   &__line {
-    border: 1.8px solid black; // TODO variables.$color-white-500
-    transition: border-color 0.2s ease;
-
-    &--top {
-
-    }
+    border: 1.8px solid variables.$color-white-500;
+    transition: transform 0.2s ease, border-color 0.2s ease;
   }
 
   &__list {
