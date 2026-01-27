@@ -3,28 +3,35 @@
     <a class="header-main__link-logo" href="#">
       <img src="./assets/images/vector/logo.svg" width="258" height="53" alt="Логотип Moon River - ювелирные изделия">
     </a>
-    <ul class="header-main__list-actions">
-      <li class="header-main__item-action">
-        <button class="header-main__button-action">
-          <svg width="23" height="20">
-            <use href="./assets/images/vector/header-favorite-icon.svg#header-favorite"/>
-          </svg>
-        </button>
-      </li>
-      <li class="header-main__item-action">
-        <button class="header-main__button-action">
-          <svg width="15" height="22">
-            <use href="./assets/images/vector/header-account-icon.svg#header-main-account"/>
-          </svg>
-        </button>
-      </li>
-      <li matBadge="1" matBadgePosition="after" class="header-main__item-action">
-        <button class="header-main__button-action">
-          <svg width="17" height="22">
-            <use href="./assets/images/vector/header-cart-icon.svg#header-main-cart"/>
-          </svg>
-        </button>
-      </li>
-    </ul>
+    <div class="header-main__wrapper-actions">
+      <ul class="header-main__list-actions">
+        <li class="header-main__item-action">
+          <button class="button header-main__button-action">
+            <svg width="23" height="20">
+              <use href="./assets/images/vector/header-favorite-icon.svg#header-favorite"/>
+            </svg>
+          </button>
+        </li>
+        <li class="header-main__item-action">
+          <button class="button header-main__button-action">
+            <svg width="15" height="22">
+              <use href="./assets/images/vector/header-account-icon.svg#header-main-account"/>
+            </svg>
+          </button>
+        </li>
+        <li matBadge="1" matBadgePosition="after" class="header-main__item-action">
+          <button class="button header-main__button-action">
+            <svg width="17" height="22">
+              <use href="./assets/images/vector/header-cart-icon.svg#header-main-cart"/>
+            </svg>
+          </button>
+        </li>
+      </ul>
+      <button class="button header-main__button-burger">
+        <span class="header-main__line header-main__line--top"></span>
+        <span class="header-main__line header-main__line--middle"></span>
+        <span class="header-main__line header-main__line--bottom"></span>
+      </button>
+    </div>
   </div>
 </header>

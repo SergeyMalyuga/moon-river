@@ -1,6 +1,11 @@
 @use '../../../styles/variables' as variables;
 
 .header-main {
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 0;
+
   svg, img {
     display: block;
   }
@@ -11,32 +16,74 @@
     align-items: center;
   }
 
-&__button {
-  &-action {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    transition: color 0.5s ease;
-
-    &:hover {
-      color: variables.$button-hover;
-    }
-
-    &:active {
-      color: variables.$button-action;
-    }
-
-    &:focus {
-      outline: none;
-    }
-
-    &:focus-visible {
-      outline: 2px solid black;
-      outline-offset: 2px;
+  &__wrapper {
+    &-actions {
+      display: flex;
+      gap: 56px;
     }
   }
-}
+
+  &__button {
+    &-action {
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      transition: color 0.5s ease;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:focus-visible {
+        outline: 2px solid black;
+        outline-offset: 2px;
+      }
+    }
+
+    &-burger {
+      position: relative;
+      width: 30px;
+      padding: 0;
+      background-color: transparent;
+      border: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      transition: gap 0.2s ease;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:focus-visible {
+        outline: 2px solid black;
+        outline-offset: 2px;
+      }
+
+      &:hover {
+        gap: 11px;
+
+        span {
+            border-color: variables.$button-hover;
+        }
+      }
+
+      &:active {
+        span {
+          border-color: variables.$button-action;
+        }
+      }
+    }
+  }
+
+  &__line {
+    border: 1.8px solid black; // TODO variables.$color-white-500
+    transition: border-color 0.2s ease;
+
+    &--top {
+
+    }
+  }
 
   &__list {
     &-actions {

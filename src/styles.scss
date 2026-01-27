@@ -21,6 +21,10 @@ p {
   margin: 0;
 }
 
+body {
+  margin: 0;
+}
+
 .container {
   max-width: 1470px;
   width: 100%;
@@ -30,6 +34,22 @@ p {
 
 .mat-badge-content {
   left: 150% !important;
+}
+
+.button {
+  cursor: pointer;
+
+  &:hover {
+    color: variables.$button-hover;
+  }
+
+  &:active {
+    color: variables.$button-action;
+  }
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .visually-hidden {
