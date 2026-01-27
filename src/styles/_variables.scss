@@ -1,1 +1,20 @@
+// ===== COLOR =====
 
+/* BASE */
+$color-orange-300: rgb(239 197 139);
+$color-orange-500: rgb(237 155 55);
+$color-white-500: rgb(255 255 255);
+
+/* INTERACTIVE */
+$color-interactive-hover: $color-orange-300;
+$color-interactive-active: $color-orange-500;
+
+/* Фон */
+
+/* Компоненты */
+$button-hover: $color-interactive-hover;
+$button-action: $color-interactive-active;
+
+// ===== TYPOGRAPHY =====
+$font-family-primary: 'Roboto', sans-serif;
+$font-family-secondary: 'Archangelsk', sans-serif;
