@@ -4,15 +4,23 @@
 $color-orange-300: rgb(239 197 139);
 $color-orange-500: rgb(237 155 55);
 $color-white-500: rgb(255 255 255);
+$color-black-500: rgb(0 0 0);
+$color-grey-700: rgb(39 39 39);
 
 /* INTERACTIVE */
 $color-interactive-hover: $color-orange-300;
 $color-interactive-active: $color-orange-500;
 
 /* Фон */
+$hero-gradient-start: $color-white-500;
+$hero-gradient-end: $color-grey-700;
+$hero-background: $color-grey-700;
+$navigation-overlay-background: $color-grey-700;
 
 /* Компоненты */
 $button-main: $color-white-500;
+$button-contrast-on-white: $color-black-500;
+$button-content-shadow: $color-black-500;
 $button-hover: $color-interactive-hover;
 $button-action: $color-interactive-active;
 

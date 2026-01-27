@@ -51,6 +51,10 @@ body {
   &:focus {
     outline: none;
   }
+
+  @media (width <= 1023px) {
+    color: variables.$button-contrast-on-white;
+  }
 }
 
 .visually-hidden {
