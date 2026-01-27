@@ -1,0 +1,6 @@
+@use '../../../styles/variables' as variables;
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(90deg, rgb(255 255 255) 60%, rgb(39 39 39) 60%);
+}
