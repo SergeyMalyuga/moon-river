@@ -114,7 +114,15 @@
       position: absolute;
       top: 0;
       left: 0;
+      transform: translateY(-100%);
       background-color: variables.$navigation-overlay-background;
+      transition: transform 0.8s cubic-bezier(.68, -.55, .265, 1.55);
+
+
+      &.open {
+        transition: transform 0.8s 0.9s ease;
+        transform: translateY(0);
+      }
     }
   }
 }

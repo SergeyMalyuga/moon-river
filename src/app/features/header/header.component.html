@@ -2,8 +2,11 @@
   <div class="header-main__content container">
     <div class="header-main__wrapper-header container">
       <a class="header-main__link-logo" href="#">
-        <img src="../../../assets/images/vector/logo-dark.svg" width="258" height="53" alt="Логотип Moon River - ювелирные изделия">
+        <img
+          [src]="isNavOpen() ? '../../../assets/images/vector/logo-light.svg' : '../../../assets/images/vector/logo-dark.svg'"
+          width="258" height="53" alt="Логотип Moon River - ювелирные изделия">
       </a>
+
       <div class="header-main__wrapper-actions">
         <ul class="header-main__list-actions">
           <li class="header-main__item-action">
@@ -28,7 +31,9 @@
             </button>
           </li>
         </ul>
-        <button class="button header-main__button-burger" aria-haspopup="true" aria-controls="header-main-navigation-overlay">
+        <button appToggle (toggled)="toggleNav()" class="button header-main__button-burger"
+                aria-haspopup="true" aria-controls="header-main-navigation-overlay"
+                [attr.aria-expanded]="isNavOpen()">
           <span class="header-main__line header-main__line--top"></span>
           <span class="header-main__line header-main__line--middle"></span>
           <span class="header-main__line header-main__line--bottom"></span>
@@ -36,7 +41,7 @@
       </div>
     </div>
 
-    <div id="header-main-navigation-overlay" class="header-main__navigation-overlay">
+    <div id="header-main-navigation-overlay" class="header-main__navigation-overlay" [class.open]="isNavOpen()" [attr.aria-hidden]="!isNavOpen()">
 
     </div>
   </div>

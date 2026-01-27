@@ -57,6 +57,10 @@ body {
   }
 }
 
+.open {
+  display: block !important;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
