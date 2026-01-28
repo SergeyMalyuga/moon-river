@@ -61,6 +61,18 @@ body {
   display: block !important;
 }
 
+/*.light-theme {
+  background: linear-gradient(90deg, variables.$hero-gradient-start 60%, variables.$hero-gradient-end 60%);
+
+  @media (width <= 1023px) {
+    background: linear-gradient(116deg, rgb(255 255 255) 60%, rgb(39 39 39) 40%);
+  }
+}
+
+.dark-theme {
+  background: red;
+}*/
+
 .visually-hidden {
   position: absolute;
   width: 1px;

@@ -1,4 +1,4 @@
-<app-header/>
+<app-header (navToggled)="onNavToggled($event)"/>
 <main role="main">
-  <app-hero/>
+  <app-hero [isDarkTheme]="isNavOpen()"/>
 </main>

@@ -32,11 +32,12 @@
           </li>
         </ul>
         <button appToggle (toggled)="toggleNav()" class="button header-main__button-burger"
+                [class.nav-open]="isNavOpen()"
                 aria-haspopup="true" aria-controls="header-main-navigation-overlay"
                 [attr.aria-expanded]="isNavOpen()">
-          <span class="header-main__line header-main__line--top"></span>
-          <span class="header-main__line header-main__line--middle"></span>
-          <span class="header-main__line header-main__line--bottom"></span>
+          <span [class]="(isNavOpen() ? 'header-main__line--top nav-open' : '') + ' header-main__line'"></span>
+          <span [class]="(isNavOpen() ? 'header-main__line--middle nav-open' : '') + ' header-main__line'"></span>
+          <span [class]="(isNavOpen() ? 'header-main__line--bottom nav-open' : '') + ' header-main__line'"></span>
         </button>
       </div>
     </div>

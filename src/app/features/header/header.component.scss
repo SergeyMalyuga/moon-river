@@ -81,6 +81,18 @@
         }
       }
 
+      &.nav-open {
+        &:hover {
+          .header-main__line--top {
+            transform: rotate(45deg);
+          }
+
+          .header-main__line--bottom {
+            transform: rotate(-45deg);
+          }
+        }
+      }
+
       @media (width <= 1023px) {
         filter: drop-shadow(0 1px 2px variables.$button-content-shadow);
       }
@@ -97,7 +109,28 @@
 
   &__line {
     border: 1.8px solid variables.$color-white-500;
-    transition: transform 0.2s ease, border-color 0.2s ease;
+    transition: transform 1s ease, border-color 0.2s ease, opacity 5s ease;
+
+    &.nav-open {
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      top: 0;
+      left: 0;
+    }
+
+    &--top {
+      transform: rotate(45deg);
+    }
+
+    &--middle {
+      transition: opacity 0.2s ease;
+      opacity: 0;
+    }
+
+    &--bottom {
+      transform: rotate(-45deg);
+    }
   }
 
   &__list {
