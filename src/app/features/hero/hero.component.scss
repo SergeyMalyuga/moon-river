@@ -2,6 +2,7 @@
 
 .hero {
   height: 100vh;
+  padding-top: 153px;
   background: linear-gradient(90deg, variables.$hero-gradient-start 60%, variables.$hero-gradient-end 60%);
   transition: background-color 1s ease;
 

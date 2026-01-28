@@ -42,8 +42,38 @@
       </div>
     </div>
 
-    <div id="header-main-navigation-overlay" class="header-main__navigation-overlay" [class.open]="isNavOpen()" [attr.aria-hidden]="!isNavOpen()">
+      <div id="header-main-navigation-overlay" class="header-main__navigation-overlay navigation-overlay"
+           [class.open]="isNavOpen()"
+           [attr.aria-hidden]="!isNavOpen()">
+        <div class="header-main__wrapper-nav">
+          <nav class="header-main__nav container">
+            <ul class="header-main__list-nav">
+              <li class="header-main__item-nav-link">
+                <a class="header-main__link-nav" href="#">ювелирные изделия</a>
+              </li>
+              <li class="header-main__item-nav-link">
+                <a class="header-main__link-nav" href="#">часы</a>
+              </li>
+              <li class="header-main__item-nav-link">
+                <a class="header-main__link-nav" href="#">ароматы</a>
+              </li>
+              <li class="header-main__item-nav-link">
+                <a class="header-main__link-nav" href="#">бренды</a>
+              </li>
+              <li class="header-main__item-nav-link">
+                <a class="header-main__link-nav" href="#">изделия из кожи</a>
+              </li>
+              <li class="header-main__item-nav-link">
+                <a class="header-main__link-nav">cвадебные украшения</a>
+              </li>
+              <li class="header-main__item-nav-link">
+                <a class="header-main__link-nav">другое</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
 
-    </div>
+      </div>
+
   </div>
 </header>

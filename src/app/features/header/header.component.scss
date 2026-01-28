@@ -23,6 +23,11 @@
       transform: translateX(-50%);
       z-index: 1;
     }
+
+    &-nav {
+      padding: 27px 0;
+      background-color: variables.$navigation-background;
+    }
   }
 
   &__button {
@@ -138,23 +143,28 @@
       display: flex;
       gap: 40px;
     }
+
+    &-nav {
+      display: flex;
+      gap: 50px;
+    }
   }
 
   &__navigation {
     &-overlay {
-      height: 100vh;
+      height: calc(100vh - 153px);
       width: 100%;
       position: absolute;
-      top: 0;
-      left: 0;
-      transform: translateY(-100%);
+      top: 153px;
+      left: 50%;
+      transform: translate(-50%,-150%);
       background-color: variables.$navigation-overlay-background;
       transition: transform 0.8s cubic-bezier(.68, -.55, .265, 1.55);
 
 
       &.open {
         transition: transform 0.8s 0.9s ease;
-        transform: translateY(0);
+        transform: translate(-50%, 0);
       }
     }
   }

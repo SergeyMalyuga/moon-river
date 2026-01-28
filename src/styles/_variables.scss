@@ -5,6 +5,7 @@ $color-orange-300: rgb(239 197 139);
 $color-orange-500: rgb(237 155 55);
 $color-white-500: rgb(255 255 255);
 $color-black-500: rgb(0 0 0);
+$color-grey-600: rgb(47 47 47);
 $color-grey-700: rgb(39 39 39);
 
 /* INTERACTIVE */
@@ -16,6 +17,7 @@ $hero-gradient-start: $color-white-500;
 $hero-gradient-end: $color-grey-700;
 $hero-background: $color-grey-700;
 $navigation-overlay-background: $color-grey-700;
+$navigation-background: $color-grey-600;
 
 /* Компоненты */
 $button-main: $color-white-500;
