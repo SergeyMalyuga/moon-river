@@ -161,12 +161,18 @@
 
     &-nav {
       display: flex;
-      justify-content: space-between;
+      //justify-content: space-between;
+      gap: 50px;
+      flex-wrap: wrap;
     }
 
     &-categories {
       display: flex;
-      justify-content: space-between;
+      gap: 100px;
+
+      @media (width <= 910px) {
+        gap: clamp(2.5rem, -3.125rem + 15vw, 6.25rem);
+      }
     }
 
     &-category {
@@ -183,7 +189,7 @@
       position: absolute;
       top: 153px;
       left: 50%;
-      transform: translate(-50%,-150%);
+      transform: translate(-50%, -150%);
       background-color: variables.$navigation-overlay-background;
       transition: transform 0.8s cubic-bezier(.68, -.55, .265, 1.55);
 
