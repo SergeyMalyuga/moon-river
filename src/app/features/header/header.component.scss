@@ -1,4 +1,5 @@
 @use "../../../styles/variables" as variables;
+@use "../../../styles/abstacts/mixins" as mixins;
 
 .header-main {
   svg,
@@ -17,6 +18,16 @@
       text-align: left;
       text-transform: uppercase;
       margin-bottom: 30px;
+    }
+
+    &-footer {
+      font-family: variables.$font-family-forum;
+      font-style: normal;
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 54px;
+      letter-spacing: 0.03em;
+      text-align: center;
     }
   }
 
@@ -43,6 +54,38 @@
       padding: 27px 0;
       background-color: variables.$navigation-background;
       margin-bottom: 70px;
+    }
+
+    &-column {
+      &-left {
+        color: white;
+        position: relative;
+        display: flex;
+        gap: 55px;
+        flex-direction: column;
+        padding: 30px;
+        max-width: 749px;
+        width: 100%;
+        background-image: url("../../../assets/images/raster/header-main-nav-overlay-bg.jpg");
+        z-index: 0;
+
+        &::before {
+          content: "";
+          position: absolute;
+          display: block;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgb(0 0 0 / 40%);
+          z-index: -1;
+        }
+
+        h2 {
+          z-index: 1;
+          align-self: center;
+        }
+      }
     }
   }
 
@@ -130,10 +173,9 @@
 
   &__line {
     border: 1.8px solid variables.$color-white-500;
-    transition:
-      transform 1s ease,
-      border-color 0.5s ease,
-      opacity 5s ease;
+    transition: transform 1s ease,
+    border-color 0.5s ease,
+    opacity 5s ease;
 
     &.nav-open {
       position: absolute;
@@ -172,6 +214,9 @@
     &-categories {
       display: flex;
       gap: 100px;
+      padding-bottom: 60px;
+      border-bottom: 2px solid variables.$categories-border-line;
+      margin-bottom: 71px;
 
       @media (width <= 910px) {
         gap: clamp(2.5rem, -3.125rem + 15vw, 6.25rem);
@@ -245,11 +290,8 @@
       }
     }
 
-    &-category {
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 22px;
-      letter-spacing: 0.06em;
+    &-category, &-mercury-collection {
+      @include mixins.navigation-overlay-link-text;
     }
 
     &--all-brands {
@@ -262,5 +304,40 @@
       letter-spacing: 0;
       text-align: left;
     }
+
+    &-mercury-collection {
+      align-self: flex-end;
+      display: flex;
+      align-items: center;
+      gap: 23px;
+
+      &::after {
+        content: "";
+        display: block;
+        top: 0;
+        right: 0;
+        width: 33px;
+        height: 19px;
+        background-color: variables.$color-white-500;
+        mask-image: url("../../../assets/images/vector/navigation-overlay-arrow-big.svg");
+        mask-repeat: no-repeat;
+        mask-size: cover;
+        mask-position: center;
+        transition: transform 0.5s ease, background-color 0.5s ease;
+      }
+
+      &:hover {
+        &::after {
+          transform: translateX(10px);
+          background-color: variables.$navigation-overlay-arrow;
+        }
+      }
+    }
+  }
+
+  &__subtitle {
+    font-family: variables.$font-family-futura;
+
+    @include mixins.navigation-overlay-link-text;
   }
 }
