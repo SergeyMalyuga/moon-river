@@ -1,48 +1,53 @@
 @font-face {
   font-family: Forum;
-  src: url("../assets/fonts/forum-regular.woff2") format("woff2"),
-  url("../assets/fonts/forum-regular.woff") format("woff"),
-  url("../assets/fonts/forum-regular.ttf") format("truetype");
+  src:
+    url("../assets/fonts/forum-regular.woff2") format("woff2"),
+    url("../assets/fonts/forum-regular.woff") format("woff"),
+    url("../assets/fonts/forum-regular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Futura PT';
-  src: url("../assets/fonts/futura-pt-book.woff2") format("woff2"),
-  url("../assets/fonts/futura-pt-book.woff") format("woff"),
-  url("../assets/fonts/futura-pt-book.ttf") format("truetype");
+  font-family: "Futura PT";
+  src:
+    url("../assets/fonts/futura-pt-book.woff2") format("woff2"),
+    url("../assets/fonts/futura-pt-book.woff") format("woff"),
+    url("../assets/fonts/futura-pt-book.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Futura PT';
-  src: url("../assets/fonts/futura-pt-light.woff2") format("woff2"),
-  url("../assets/fonts/futura-pt-light.woff") format("woff"),
-  url("../assets/fonts/futura-pt-light.ttf") format("truetype");
+  font-family: "Futura PT";
+  src:
+    url("../assets/fonts/futura-pt-light.woff2") format("woff2"),
+    url("../assets/fonts/futura-pt-light.woff") format("woff"),
+    url("../assets/fonts/futura-pt-light.ttf") format("truetype");
   font-style: normal;
   font-weight: 300;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Futura PT';
-  src: url("../assets/fonts/futura-pt-medium.woff2") format("woff2"),
-  url("../assets/fonts/futura-pt-medium.woff") format("woff"),
-  url("../assets/fonts/futura-pt-medium.ttf") format("truetype");
+  font-family: "Futura PT";
+  src:
+    url("../assets/fonts/futura-pt-medium.woff2") format("woff2"),
+    url("../assets/fonts/futura-pt-medium.woff") format("woff"),
+    url("../assets/fonts/futura-pt-medium.ttf") format("truetype");
   font-style: normal;
   font-weight: 500;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Futura PT';
-  src: url("../assets/fonts/futura-pt-demi.woff2") format("woff2"),
-  url("../assets/fonts/futura-pt-demi.woff") format("woff"),
-  url("../assets/fonts/futura-pt-demi.ttf") format("truetype");
+  font-family: "Futura PT";
+  src:
+    url("../assets/fonts/futura-pt-demi.woff2") format("woff2"),
+    url("../assets/fonts/futura-pt-demi.woff") format("woff"),
+    url("../assets/fonts/futura-pt-demi.ttf") format("truetype");
   font-style: normal;
   font-weight: 600;
   font-display: swap;

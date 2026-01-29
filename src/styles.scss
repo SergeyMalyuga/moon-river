@@ -1,7 +1,9 @@
-@use './styles/fonts';
-@use './styles/variables' as variables;
+@use "./styles/fonts";
+@use "./styles/variables" as variables;
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 

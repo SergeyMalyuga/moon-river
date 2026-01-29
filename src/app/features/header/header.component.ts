@@ -1,19 +1,21 @@
-import {ChangeDetectionStrategy, Component, EventEmitter, Output, signal} from '@angular/core';
-import {MatBadge} from '@angular/material/badge';
-import {ToggleDirective} from '../../shared/directives/toggle.directive';
-import {SelectCategoryDirective} from './directives/select-category.directive';
-import {ProductCategory} from '../../core/constants/const';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  EventEmitter,
+  Output,
+  signal,
+} from '@angular/core';
+import { MatBadge } from '@angular/material/badge';
+import { ToggleDirective } from '../../shared/directives/toggle.directive';
+import { SelectCategoryDirective } from './directives/select-category.directive';
+import { ProductCategory } from '../../core/constants/const';
 
 @Component({
   selector: 'app-header',
-  imports: [
-    MatBadge,
-    ToggleDirective,
-    SelectCategoryDirective,
-  ],
+  imports: [MatBadge, ToggleDirective, SelectCategoryDirective],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeaderComponent {
   @Output() navToggled = new EventEmitter<boolean>();

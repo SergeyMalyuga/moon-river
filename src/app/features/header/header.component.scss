@@ -1,7 +1,8 @@
-@use '../../../styles/variables' as variables;
+@use "../../../styles/variables" as variables;
 
 .header-main {
-  svg, img {
+  svg,
+  img {
     display: block;
   }
 
@@ -129,7 +130,10 @@
 
   &__line {
     border: 1.8px solid variables.$color-white-500;
-    transition: transform 1s ease, border-color 0.5s ease, opacity 5s ease;
+    transition:
+      transform 1s ease,
+      border-color 0.5s ease,
+      opacity 5s ease;
 
     &.nav-open {
       position: absolute;
@@ -190,8 +194,7 @@
       left: 50%;
       transform: translate(-50%, -150%);
       background-color: variables.$navigation-overlay-background;
-      transition: transform 0.8s cubic-bezier(.68, -.55, .265, 1.55);
-
+      transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
       &.open {
         transition: transform 0.8s 0.9s ease;
@@ -209,11 +212,11 @@
     transition: color 0.5s ease;
 
     &:hover {
-      color: variables.$link-hover
+      color: variables.$link-hover;
     }
 
     &:active {
-      color: variables.$link-action
+      color: variables.$link-action;
     }
 
     &-nav {

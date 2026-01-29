@@ -1,5 +1,5 @@
 export enum AppRoute {
-  MAIN = ''
+  MAIN = '',
 }
 
 export enum ProductCategory {
@@ -9,5 +9,5 @@ export enum ProductCategory {
   BRANDS = 'brands',
   LEATHER_GOODS = 'leather goods',
   WEDDING_DECORATIONS = 'wedding decorations',
-  OTHER = 'other'
+  OTHER = 'other',
 }

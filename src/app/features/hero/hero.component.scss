@@ -1,16 +1,22 @@
-@use '../../../styles/variables' as variables;
+@use "../../../styles/variables" as variables;
 
 .hero {
   height: 100vh;
   padding-top: 153px;
-  background: linear-gradient(90deg, variables.$hero-gradient-start 60%, variables.$hero-gradient-end 60%);
+  background: linear-gradient(
+    90deg,
+    variables.$hero-gradient-start 60%,
+    variables.$hero-gradient-end 60%
+  );
   transition: background-color 1s ease;
 
   @media (width <= 1023px) {
-    background: linear-gradient(116deg, rgb(255 255 255) 60%, rgb(39 39 39) 40%);
+    background: linear-gradient(
+      116deg,
+      rgb(255 255 255) 60%,
+      rgb(39 39 39) 40%
+    );
   }
-
-
 
   &.dark-theme {
     background: variables.$hero-background;
