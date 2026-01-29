@@ -28,6 +28,7 @@
       line-height: 54px;
       letter-spacing: 0.03em;
       text-align: center;
+      text-transform: uppercase;
     }
   }
 
@@ -245,6 +246,11 @@
         transition: transform 0.8s 0.9s ease;
         transform: translate(-50%, 0);
       }
+
+      &-footer {
+        display: flex;
+        gap: 85px;
+      }
     }
   }
 
@@ -331,6 +337,19 @@
           transform: translateX(10px);
           background-color: variables.$navigation-overlay-arrow;
         }
+      }
+    }
+
+    &-social {
+      color: variables.$color-white-500;
+      transition: color 0.5s ease;
+
+      &:hover {
+        color: variables.$link-hover;
+      }
+
+      &:active {
+        color: variables.$link-action;
       }
     }
   }
