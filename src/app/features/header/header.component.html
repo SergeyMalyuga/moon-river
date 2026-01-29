@@ -42,118 +42,133 @@
       </div>
     </div>
 
-      <div id="header-main-navigation-overlay" class="header-main__navigation-overlay navigation-overlay"
-           [class.open]="isNavOpen()"
-           [attr.aria-hidden]="!isNavOpen()">
-        <div class="header-main__wrapper-nav">
-          <nav class="header-main__nav container">
-            <ul class="header-main__list-nav">
-              <li class="header-main__item-nav-link">
-                <a class="header-main__link header-main__link-nav" href="#">ювелирные изделия</a>
-              </li>
-              <li class="header-main__item-nav-link">
-                <a class="header-main__link header-main__link-nav" href="#">часы</a>
-              </li>
-              <li class="header-main__item-nav-link">
-                <a class="header-main__link header-main__link-nav" href="#">ароматы</a>
-              </li>
-              <li class="header-main__item-nav-link">
-                <a class="header-main__link header-main__link-nav" href="#">бренды</a>
-              </li>
-              <li class="header-main__item-nav-link">
-                <a class="header-main__link header-main__link-nav" href="#">изделия из кожи</a>
-              </li>
-              <li class="header-main__item-nav-link">
-                <a class="header-main__link header-main__link-nav" href="#">cвадебные украшения</a>
-              </li>
-              <li class="header-main__item-nav-link">
-                <a class="header-main__link header-main__link-nav" href="#">другое</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="header-main__navigation-overlay-content container">
-          <ul class="header-main__list-categories">
-            <li class="header-main__item-category">
-              <h2 class="header-main__title-category">для кого</h2>
-              <ul class="header-main__list-category">
-                <li class="header-main__item-category-link">
-                  <a class="header-main__link header-main__link-category" href="#">Для женщин</a>
-                </li>
-                <li class="header-main__item-category-link">
-                  <a class="header-main__link header-main__link-category" href="#">Для мужчин</a>
-                </li>
-                <li class="header-main__item-category-link">
-                  <a class="header-main__link header-main__link-category" href="#">Для детей</a>
-                  </li>
-              </ul>
+    <div id="header-main-navigation-overlay" class="header-main__navigation-overlay navigation-overlay"
+         [class.open]="isNavOpen()"
+         [attr.aria-hidden]="!isNavOpen()">
+      <div class="header-main__wrapper-nav">
+        <nav class="header-main__nav container">
+          <ul class="header-main__list-nav">
+            <li class="header-main__item-nav-link">
+              <a appSelectCategory [category]="ProductCategory.JEWELERY" (categorySelected)="selectCategory($event)"
+                class="header-main__link header-main__link-nav"
+                 [class.header-main-active]="activeCategory() === ProductCategory.JEWELERY" href="#">ювелирные изделия</a>
             </li>
-
-            <li class="header-main__item-category">
-              <h2 class="header-main__title-category">категории</h2>
-              <ul class="header-main__list-category">
-                <li class="header-main__item-category-link">
-                  <a class="header-main__link header-main__link-category" href="#">Кольца</a>
-                </li>
-                <li class="header-main__item-category-link">
-                  <a class="header-main__link header-main__link-category" href="#">Браслеты</a>
-                </li>
-                <li class="header-main__item-category-link">
-                  <a class="header-main__link header-main__link-category" href="#">Колье</a>
-                </li>
-                <li class="header-main__item-category-link">
-                  <a class="header-main__link header-main__link-category" href="#">Серьги</a>
-                </li>
-                <li class="header-main__item-category-link">
-                  <a class="header-main__link header-main__link-category" href="#">Броши</a>
-                </li>
-              </ul>
+            <li class="header-main__item-nav-link">
+              <a appSelectCategory [category]="ProductCategory.CLOCK" (categorySelected)="selectCategory($event)"
+                 class="header-main__link header-main__link-nav"
+                 [class.header-main-active]="activeCategory() === ProductCategory.CLOCK" href="#">часы</a>
             </li>
-
-            <li class="header-main__item-category">
-              <h2 class="header-main__title-category">материал</h2>
-              <ul class="header-main__list-category">
-                <li class="header-main__item-category-link">
-                  <a class="header-main__link header-main__link-category" href="#">Изделия  с бриллиантами</a>
-                </li>
-                <li class="header-main__item-category-link">
-                  <a class="header-main__link header-main__link-category" href="#">Желтое золото</a>
-                </li>
-                <li class="header-main__item-category-link">
-                  <a class="header-main__link header-main__link-category" href="#">Белое золото</a>
-                </li>
-                <li class="header-main__item-category-link">
-                  <a class="header-main__link header-main__link-category" href="#">Розовое золото</a>
-                </li>
-              </ul>
+            <li class="header-main__item-nav-link">
+              <a appSelectCategory [category]="ProductCategory.AROMAS" (categorySelected)="selectCategory($event)"
+                 class="header-main__link header-main__link-nav"
+                 [class.header-main-active]="activeCategory() === ProductCategory.AROMAS" href="#">ароматы</a>
             </li>
-
-            <li class="header-main__item-category">
-              <h2 class="header-main__title-category">бренд</h2>
-              <ul class="header-main__list-category">
-                <li class="header-main__item-category-link">
-                  <a class="header-main__link header-main__link-category" href="#">Mercury</a>
-                </li>
-                <li class="header-main__item-category-link">
-                  <a class="header-main__link header-main__link-category" href="#">Chopard</a>
-                </li>
-                <li class="header-main__item-category-link">
-                  <a class="header-main__link header-main__link-category" href="#">Cartier</a>
-                </li>
-                <li class="header-main__item-category-link">
-                  <a class="header-main__link header-main__link-category" href="#">Graff</a>
-                </li>
-                <li class="header-main__item-category-link">
-                  <a class="header-main__link header-main__link-category" href="#">Garrard</a>
-                </li>
-                <li class="header-main__item-category-link">
-                  <a class="header-main__link header-main__link-category" href="#"> Показать все бренды</a>
-                </li>
-              </ul>
+            <li class="header-main__item-nav-link">
+              <a appSelectCategory [category]="ProductCategory.BRANDS" (categorySelected)="selectCategory($event)"
+                 class="header-main__link header-main__link-nav"
+                 [class.header-main-active]="activeCategory() === ProductCategory.BRANDS" href="#">бренды</a>
+            </li>
+            <li class="header-main__item-nav-link">
+              <a appSelectCategory [category]="ProductCategory.LEATHER_GOODS" (categorySelected)="selectCategory($event)"
+                 class="header-main__link header-main__link-nav"
+                 [class.header-main-active]="activeCategory() === ProductCategory.LEATHER_GOODS" href="#">изделия из
+                кожи</a>
+            </li>
+            <li class="header-main__item-nav-link">
+              <a appSelectCategory [category]="ProductCategory.WEDDING_DECORATIONS"
+                 (categorySelected)="selectCategory($event)" class="header-main__link header-main__link-nav"
+                 [class.header-main-active]="activeCategory() === ProductCategory.WEDDING_DECORATIONS" href="#">cвадебные
+                украшения</a>
+            </li>
+            <li class="header-main__item-nav-link">
+              <a appSelectCategory [category]="ProductCategory.OTHER" (categorySelected)="selectCategory($event)"
+                 class="header-main__link header-main__link-nav"
+                 [class.header-main-active]="activeCategory() === ProductCategory.OTHER" href="#">другое</a>
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
+      <div class="header-main__navigation-overlay-content container">
+        <ul class="header-main__list-categories">
+          <li class="header-main__item-category">
+            <h2 class="header-main__title-category">для кого</h2>
+            <ul class="header-main__list-category">
+              <li class="header-main__item-category-link">
+                <a class="header-main__link header-main__link-category" href="#">Для женщин</a>
+              </li>
+              <li class="header-main__item-category-link">
+                <a class="header-main__link header-main__link-category" href="#">Для мужчин</a>
+              </li>
+              <li class="header-main__item-category-link">
+                <a class="header-main__link header-main__link-category" href="#">Для детей</a>
+              </li>
+            </ul>
+          </li>
 
+          <li class="header-main__item-category">
+            <h2 class="header-main__title-category">категории</h2>
+            <ul class="header-main__list-category">
+              <li class="header-main__item-category-link">
+                <a class="header-main__link header-main__link-category" href="#">Кольца</a>
+              </li>
+              <li class="header-main__item-category-link">
+                <a class="header-main__link header-main__link-category" href="#">Браслеты</a>
+              </li>
+              <li class="header-main__item-category-link">
+                <a class="header-main__link header-main__link-category" href="#">Колье</a>
+              </li>
+              <li class="header-main__item-category-link">
+                <a class="header-main__link header-main__link-category" href="#">Серьги</a>
+              </li>
+              <li class="header-main__item-category-link">
+                <a class="header-main__link header-main__link-category" href="#">Броши</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="header-main__item-category">
+            <h2 class="header-main__title-category">материал</h2>
+            <ul class="header-main__list-category">
+              <li class="header-main__item-category-link">
+                <a class="header-main__link header-main__link-category" href="#">Изделия с бриллиантами</a>
+              </li>
+              <li class="header-main__item-category-link">
+                <a class="header-main__link header-main__link-category" href="#">Желтое золото</a>
+              </li>
+              <li class="header-main__item-category-link">
+                <a class="header-main__link header-main__link-category" href="#">Белое золото</a>
+              </li>
+              <li class="header-main__item-category-link">
+                <a class="header-main__link header-main__link-category" href="#">Розовое золото</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="header-main__item-category">
+            <h2 class="header-main__title-category">бренд</h2>
+            <ul class="header-main__list-category">
+              <li class="header-main__item-category-link">
+                <a class="header-main__link header-main__link-category" href="#">Mercury</a>
+              </li>
+              <li class="header-main__item-category-link">
+                <a class="header-main__link header-main__link-category" href="#">Chopard</a>
+              </li>
+              <li class="header-main__item-category-link">
+                <a class="header-main__link header-main__link-category" href="#">Cartier</a>
+              </li>
+              <li class="header-main__item-category-link">
+                <a class="header-main__link header-main__link-category" href="#">Graff</a>
+              </li>
+              <li class="header-main__item-category-link">
+                <a class="header-main__link header-main__link-category" href="#">Garrard</a>
+              </li>
+              <li class="header-main__item-category-link">
+                <a class="header-main__link header-main__link-category header-main__link--all-brands" href="#"> Показать все бренды</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </header>
