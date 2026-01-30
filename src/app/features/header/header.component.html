@@ -1,17 +1,10 @@
 <header class="header-main" role="banner">
   <div class="header-main__content container">
     <div class="header-main__wrapper-header container">
-      <a class="header-main__link-logo" href="#">
-        <img
-          [src]="
-            isNavOpen()
-              ? '../../../assets/images/vector/logo-light.svg'
-              : '../../../assets/images/vector/logo-dark.svg'
-          "
-          width="258"
-          height="53"
-          alt="Логотип Moon River - ювелирные изделия"
-        />
+      <a class="header-main__link-logo" [class.white-logo]="isNavOpen()" href="#">
+        <svg width="258" height="53">
+          <use href="./assets/images/vector/logo.svg#logo"/>
+        </svg>
       </a>
 
       <div class="header-main__wrapper-actions">

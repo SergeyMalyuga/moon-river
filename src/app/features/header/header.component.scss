@@ -335,6 +335,15 @@
       color: variables.$link-action;
     }
 
+    &-logo {
+      color: variables.$color-grey-700;
+      transition: color 6s ease;
+
+      &.white-logo {
+        color: variables.$color-white-500;
+      }
+    }
+
     &-nav {
       position: relative;
       font-size: 16px;
