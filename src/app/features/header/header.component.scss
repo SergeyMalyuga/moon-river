@@ -98,6 +98,10 @@
         flex-grow: 1;
       }
     }
+
+    &-footer {
+      display: flex;
+    }
   }
 
   &__button {
@@ -178,6 +182,44 @@
         .header-main__line {
           border-color: variables.$button-contrast-on-white;
         }
+      }
+    }
+
+    &-subscribe {
+      background-color: transparent;
+      padding: 0;
+      border: none;
+      cursor: pointer;
+
+      &::after {
+        content: "";
+        display: block;
+        font-size: 300px;
+        width: 30px;
+        height: 17px;
+        background-color: variables.$color-white-500;
+        mask-image: url("../../../assets/images/vector/navigation-overlay-arrow-small.svg");
+        mask-repeat: no-repeat;
+        mask-size: cover;
+        mask-position: center;
+        transition: background-color 0.5s ease, transform 0.5s ease;
+      }
+
+      &:hover {
+        &::after {
+          background-color: variables.$button-hover;
+          transform: translateX(10px);
+        }
+      }
+
+      &:active {
+        &::after {
+          background-color: variables.$button-action;
+        }
+      }
+
+      &:focus {
+        outline: 1px solid variables.$color-orange-500;
       }
     }
   }
@@ -335,8 +377,6 @@
       &::after {
         content: "";
         display: block;
-        top: 0;
-        right: 0;
         width: 33px;
         height: 19px;
         background-color: variables.$color-white-500;
@@ -389,7 +429,7 @@
 
   &__input {
     &-email {
-      display: block;
+      display: flex;
       width: 100%;
       padding: 10px 0;
       background-color: transparent;
