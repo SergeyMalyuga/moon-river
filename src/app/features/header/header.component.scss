@@ -30,6 +30,12 @@
       text-align: center;
       text-transform: uppercase;
     }
+
+    &-contact, &-subscribe {
+      @include mixins.footer-title-text;
+
+      margin-bottom: 15px;
+    }
   }
 
   &__wrapper {
@@ -86,6 +92,10 @@
           z-index: 1;
           align-self: center;
         }
+      }
+
+      &-right {
+        flex-grow: 1;
       }
     }
   }
@@ -229,6 +239,11 @@
         margin-bottom: 15px;
       }
     }
+
+    &-social {
+      display: flex;
+      gap: 20px;
+    }
   }
 
   &__navigation {
@@ -352,11 +367,50 @@
         color: variables.$link-action;
       }
     }
+
+    &-phone {
+      @include mixins.footer-contact-text;
+
+      display: inline-block;
+      text-decoration: none;
+      margin-bottom: 15px;
+    }
   }
 
   &__subtitle {
     font-family: variables.$font-family-futura;
 
     @include mixins.navigation-overlay-link-text;
+  }
+
+  &__contacts {
+    margin-bottom: 48px;
+  }
+
+  &__input {
+    &-email {
+      display: block;
+      width: 100%;
+      padding: 10px 0;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1.8px solid variables.$footer-email-border;
+      transition: border-color 0.5s ease;
+
+      @include mixins.footer-contact-text;
+
+      &::placeholder {
+        @include mixins.footer-contact-text;
+      }
+
+      &:hover {
+        border-color: variables.$footer-email-border-hover;
+      }
+
+      &:focus {
+        outline: none;
+        border-color: variables.$footer-email-border-focus;
+      }
+    }
   }
 }

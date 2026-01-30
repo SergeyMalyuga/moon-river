@@ -5,6 +5,7 @@ $color-orange-300: rgb(239 197 139);
 $color-orange-500: rgb(237 155 55);
 $color-white-500: rgb(255 255 255);
 $color-black-500: rgb(0 0 0);
+$color-grey-100: rgb(194 194 194);
 $color-grey-600: rgb(47 47 47);
 $color-grey-700: rgb(39 39 39);
 
@@ -31,6 +32,10 @@ $link-all-brands: $color-orange-300;
 $link-active: $color-orange-300;
 $categories-border-line: $color-grey-600;
 $navigation-overlay-arrow: $color-orange-300;
+$footer-contact-text: $color-grey-100;
+$footer-email-border: $color-white-500;
+$footer-email-border-focus: $color-orange-500;
+$footer-email-border-hover: $color-orange-300;
 
 // ===== TYPOGRAPHY =====
 $font-family-futura: "Futura PT", sans-serif;

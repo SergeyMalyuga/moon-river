@@ -1,6 +1,31 @@
+@use '../variables' as variables;
+
 @mixin navigation-overlay-link-text {
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0.06em;
+}
+
+@mixin footer-title-text {
+  color: variables.$color-white-500;
+  font-family: variables.$font-family-futura;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+@mixin footer-contact-text {
+  color: variables.$footer-contact-text;
+  font-family: variables.$font-family-futura;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: 0;
+  text-align: left;
 }
