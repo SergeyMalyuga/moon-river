@@ -74,6 +74,9 @@
         max-width: 749px;
         width: 100%;
         background-image: url("../../../assets/images/raster/header-main-nav-overlay-bg.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
         z-index: 0;
 
         &::before {
@@ -286,6 +289,11 @@
       display: flex;
       gap: 20px;
     }
+
+    &-store {
+      display: flex;
+      gap: 8px;
+    }
   }
 
   &__navigation {
@@ -396,11 +404,13 @@
     }
 
     &-social {
+      display: block;
       color: variables.$color-white-500;
-      transition: color 0.5s ease;
+      transition: color 0.5s ease, transform 0.5s ease;
 
       &:hover {
         color: variables.$link-hover;
+        transform: scale(0.9);
       }
 
       &:active {
@@ -414,6 +424,15 @@
       display: inline-block;
       text-decoration: none;
       margin-bottom: 15px;
+    }
+
+    &-store {
+      display: block;
+      transition: transform 0.5s ease;
+
+      &:hover {
+        transform: scale(0.9);
+      }
     }
   }
 
@@ -451,6 +470,12 @@
         outline: none;
         border-color: variables.$footer-email-border-focus;
       }
+    }
+  }
+
+  &__form {
+    &-subscribe {
+      margin-bottom: 17px;
     }
   }
 }
