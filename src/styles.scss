@@ -53,7 +53,9 @@ body {
   &:focus {
     outline: none;
   }
+}
 
+.light-theme {
   @media (width <= 1023px) {
     color: variables.$button-contrast-on-white;
   }

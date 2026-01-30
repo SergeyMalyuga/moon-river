@@ -10,7 +10,7 @@
       <div class="header-main__wrapper-actions">
         <ul class="header-main__list-actions">
           <li class="header-main__item-action">
-            <button class="button header-main__button-action">
+            <button class="button header-main__button-action" [class.light-theme]="!isNavOpen()">
               <svg width="23" height="20">
                 <use
                   href="./assets/images/vector/header-favorite-icon.svg#header-favorite"
@@ -19,7 +19,7 @@
             </button>
           </li>
           <li class="header-main__item-action">
-            <button class="button header-main__button-action">
+            <button class="button header-main__button-action" [class.light-theme]="!isNavOpen()">
               <svg width="15" height="22">
                 <use
                   href="./assets/images/vector/header-account-icon.svg#header-main-account"
@@ -32,7 +32,7 @@
             matBadgePosition="after"
             class="header-main__item-action"
           >
-            <button class="button header-main__button-action">
+            <button class="button header-main__button-action" [class.light-theme]="!isNavOpen()">
               <svg width="17" height="22">
                 <use
                   href="./assets/images/vector/header-cart-icon.svg#header-main-cart"
@@ -52,19 +52,19 @@
         >
           <span
             [class]="
-              (isNavOpen() ? 'header-main__line--top nav-open' : '') +
+              (isNavOpen() ? 'header-main__line--top nav-open' : 'dark-line') +
               ' header-main__line'
             "
           ></span>
           <span
             [class]="
-              (isNavOpen() ? 'header-main__line--middle nav-open' : '') +
+              (isNavOpen() ? 'header-main__line--middle nav-open' : 'dark-line') +
               ' header-main__line'
             "
           ></span>
           <span
             [class]="
-              (isNavOpen() ? 'header-main__line--bottom nav-open' : '') +
+              (isNavOpen() ? 'header-main__line--bottom nav-open' : 'dark-line') +
               ' header-main__line'
             "
           ></span>

@@ -182,7 +182,7 @@
       @media (width <= 784px) {
         filter: none;
 
-        .header-main__line {
+        .header-main__line.dark-line {
           border-color: variables.$button-contrast-on-white;
         }
       }
