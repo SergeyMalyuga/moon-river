@@ -105,6 +105,10 @@
 
       &-right {
         flex-grow: 1;
+
+        @media (width <= 599px) {
+          align-self: center;
+        }
       }
     }
 
@@ -271,6 +275,10 @@
       display: flex;
       gap: 50px;
       flex-wrap: wrap;
+
+      @media (width <= 599px) {
+        flex-direction: column;
+      }
     }
 
     &-categories {
@@ -282,6 +290,10 @@
 
       @media (width <= 910px) {
         gap: clamp(2.5rem, -3.125rem + 15vw, 6.25rem);
+      }
+
+      @media (width <= 599px) {
+        flex-direction: column;
       }
     }
 
@@ -304,7 +316,6 @@
 
   &__navigation {
     &-overlay {
-      height: calc(100vh - 153px);
       width: 100%;
       position: absolute;
       top: 153px;
@@ -321,6 +332,10 @@
       &-footer {
         display: flex;
         gap: 85px;
+
+        @media (width <= 599px) {
+          flex-direction: column;
+        }
       }
 
       @media (width <= 599px) {
