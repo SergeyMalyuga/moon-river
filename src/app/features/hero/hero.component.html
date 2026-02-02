@@ -1,3 +1,18 @@
 <section
-  [class]="(isDarkTheme ? 'dark-theme' : 'light-theme') + ' hero'"
-></section>
+  [class]="(isDarkTheme ? 'dark-theme' : 'light-theme') + ' hero'">
+  <div class="hero__content container">
+    <div class="hero__wrapper-column-left">
+      <h1 class="hero__title-main">High jewelry</h1>
+      <a class="hero__link hero__link-collections" href="#">Смотреть коллекцию</a>
+    </div>
+    <div class="hero__wrapper-column-right"></div>
+    <ul class="hero__list-languages">
+      <li class="hero__item-language">
+        <button class="hero__button-language hero__active" type="button" aria-label="Переключить на русский язык">ru</button>
+      </li>
+      <li class="hero__item-language">
+        <button class="hero__button-language" type="button" aria-label="Switch to english">en</button>
+      </li>
+    </ul>
+  </div>
+</section>
