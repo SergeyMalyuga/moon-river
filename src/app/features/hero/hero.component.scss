@@ -3,11 +3,13 @@
 .hero {
   height: 100vh;
   padding-top: 153px;
+  padding-bottom: 60px;
   background: linear-gradient(
       90deg,
       variables.$hero-gradient-start 60%,
       variables.$hero-gradient-end 60%
   );
+  scroll-snap-align: start;
   transition: background-color 1s ease;
 
   @media (width <= 1023px) {
@@ -26,6 +28,12 @@
     background: variables.$hero-background;
   }
 
+  &__content {
+    display: flex;
+    gap: 94px;
+    padding-top: 314px;
+  }
+
   &__wrapper {
     &-column {
       &-left {
@@ -33,6 +41,33 @@
         width: 100%;
         display: flex;
         flex-direction: column;
+      }
+
+      &-right {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        margin: 0;
+      }
+    }
+
+    &-image {
+      max-width: 322px;
+      width: 100%;
+      margin-bottom: 281px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &-product {
+      &-info {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+        align-self: flex-end;
       }
     }
   }
@@ -49,6 +84,40 @@
       text-align: left;
       text-transform: uppercase;
       margin-bottom: 50px;
+    }
+
+    &-product {
+      color: variables.$title-light;
+      font-family: variables.$font-family-futura;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+  }
+
+  &__subtitle {
+    &-product {
+      color: variables.$subtitle;
+      font-family: variables.$font-family-futura;
+      font-style: normal;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 22px;
+      letter-spacing: 0;
+    }
+  }
+
+  &__data {
+    &-price {
+      color: variables.$data-text;
+      font-family: "Segoe UI", sans-serif;
+      font-style: italic;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 22px;
+      letter-spacing: 0.03em;
     }
   }
 
@@ -94,6 +163,11 @@
         height: 1px;
         background-color: variables.$hero-link-before-bg;
       }
+    }
+
+    &-product {
+      display: flex;
+      flex-direction: column;
     }
   }
 
