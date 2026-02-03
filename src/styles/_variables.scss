@@ -22,35 +22,58 @@ $hero-background: $color-grey-700;
 $navigation-overlay-background: $color-grey-700;
 $navigation-background: $color-grey-600;
 
-/* Компоненты */
+/* КОМПОНЕНТЫ */
+
+/* button */
+
 $button-main: $color-white-500;
 $button-contrast-on-white: $color-black-500;
 $button-content-shadow: $color-black-500;
 $button-hover: $color-interactive-hover;
 $button-action: $color-interactive-active;
+
+/* link */
+
 $link-color-hover-on-light: rgb(156 97 14);
 $link-color-active-on-light: rgb(107 66 7);
 $link-hover: $color-interactive-hover;
 $link-action: $color-interactive-active;
 $link-all-brands: $color-orange-300;
 $link-active: $color-orange-300;
+
+/* hero */
+
 $hero-link-text: $color-grey-700;
+$hero-link-text-light: $color-white-500;
 $hero-button-text-active: $color-grey-700;
 $hero-button-text: $color-grey-200;
 $hero-link-before-bg: $color-grey-700;
-$categories-border-line: $color-grey-600;
-$navigation-overlay-arrow: $color-orange-300;
+$hero-link-before-bg-light: $color-white-500;
+
+/* footer */
+
 $footer-contact-text: $color-grey-100;
 $footer-email-border: $color-white-500;
 $footer-email-border-focus: $color-orange-500;
 $footer-email-border-hover: $color-orange-300;
+
+/* title */
+
 $title-dark: $color-grey-700;
 $title-light: $color-white-500;
-$subtitle: $color-grey-100;
-$data-text: $color-orange-300;
+
+/* language */
+
 $language-button: $color-orange-300;
 $language-button-hover: $color-orange-400;
 $language-button-active: $color-orange-500;
+
+/* common */
+$categories-border-line: $color-grey-600;
+$navigation-overlay-arrow: $color-orange-300;
+$subtitle: $color-grey-100;
+$data-text: $color-orange-300;
+
 
 // ===== TYPOGRAPHY =====
 $font-family-futura: "Futura PT", sans-serif;
