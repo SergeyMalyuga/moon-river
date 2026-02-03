@@ -1,6 +1,6 @@
 <section
   [class]="(isDarkTheme ? 'dark-theme' : 'light-theme') + ' hero'">
-  <div class="hero__content container">
+  <div class="hero__content container" [class.dark-theme]="isDarkTheme">
     <div class="hero__wrapper-column-left">
       <h1 class="hero__title-main">High jewelry</h1>
       <a class="hero__link hero__link-collections" href="#">Смотреть коллекцию</a>

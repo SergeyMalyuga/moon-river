@@ -33,9 +33,15 @@
     display: flex;
     gap: 94px;
     padding-top: 314px;
+    transition: opacity 0.8s 0.4s ease;
 
     @media(width <= 1023px) {
       flex-direction: column;
+    }
+
+    &.dark-theme {
+      transition: opacity 1s ease;
+      opacity: 0;
     }
   }
 
@@ -252,11 +258,5 @@
   &__active {
     color: variables.$hero-button-text-active;
     pointer-events: none;
-
-    @media (width <= 436px) {
-      color: variables.$language-button;
-
-
-    }
   }
 }
