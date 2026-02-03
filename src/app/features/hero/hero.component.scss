@@ -1,7 +1,7 @@
 @use "../../../styles/variables" as variables;
 
 .hero {
-  height: 100vh;
+  //height: 95vh;
   padding-top: 153px;
   padding-bottom: 60px;
   background: linear-gradient(
@@ -32,6 +32,10 @@
     display: flex;
     gap: 94px;
     padding-top: 314px;
+
+    @media(width <= 1023px) {
+      flex-direction: column;
+    }
   }
 
   &__wrapper {
@@ -41,6 +45,10 @@
         width: 100%;
         display: flex;
         flex-direction: column;
+
+        @media(width <= 1023px) {
+          order: 1;
+        }
       }
 
       &-right {
@@ -48,6 +56,14 @@
         flex-direction: column;
         flex-grow: 1;
         margin: 0;
+
+        @media(width <= 1023px) {
+          order: 0;
+        }
+
+        @media(width <= 556px) {
+          display: none;
+        }
       }
     }
 
@@ -59,6 +75,11 @@
       img {
         width: 100%;
         height: auto;
+      }
+
+      @media(width <= 1023px) {
+        align-self: center;
+        margin-bottom: 100px;
       }
     }
 
@@ -74,7 +95,7 @@
 
   &__title {
     &-main {
-      color: variables.$title-dark;
+      color: white;
       font-family: variables.$font-family-forum;
       font-style: normal;
       font-size: 64px;
@@ -84,6 +105,7 @@
       text-align: left;
       text-transform: uppercase;
       margin-bottom: 50px;
+      mix-blend-mode: difference;
     }
 
     &-product {
@@ -127,6 +149,7 @@
 
     &:hover {
       color: variables.$link-color-hover-on-light;
+      mix-blend-mode: normal;
 
       &::before {
         background-color: variables.$link-color-hover-on-light;
@@ -146,7 +169,7 @@
       gap: 38px;
       align-items: center;
       align-self: flex-end;
-      color: variables.$hero-link-text;
+      color: white; /*variables.$hero-link-text;*/
       font-family: "Segoe UI", sans-serif;
       font-style: italic;
       font-size: 18px;
@@ -155,13 +178,24 @@
       letter-spacing: 0;
       text-align: left;
       margin-bottom: 359px;
+      mix-blend-mode: difference;
 
       &::before {
         content: "";
         display: block;
         width: 130px;
         height: 1px;
-        background-color: variables.$hero-link-before-bg;
+        background-color: white /*variables.$hero-link-before-bg*/
+      ;
+        transition: background-color 0.5s ease;
+      }
+
+      @media(width <= 1023px) {
+        margin-bottom: 100px;
+      }
+
+      @media (width <= 556px) {
+        margin-bottom: 359px;
       }
     }
 
@@ -174,6 +208,10 @@
   &__list {
     &-languages {
       display: flex;
+
+      @media (width <= 436px) {
+        justify-content: flex-end;
+      }
     }
   }
 
@@ -190,10 +228,28 @@
       letter-spacing: 0.05em;
       text-align: left;
       text-transform: uppercase;
+      cursor: pointer;
+      transition: color 0.5s ease;
+
+      &:hover {
+        color: variables.$language-button-hover;
+      }
+
+      &:active {
+        color: variables.$language-button-active;
+      }
+
     }
   }
 
   &__active {
     color: variables.$hero-button-text-active;
+    pointer-events: none;
+
+    @media (width <= 436px) {
+      color: variables.$language-button;
+
+
+    }
   }
 }

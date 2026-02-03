@@ -2,6 +2,7 @@
 
 /* BASE */
 $color-orange-300: rgb(239 197 139);
+$color-orange-400: rgb(225 180 120);
 $color-orange-500: rgb(237 155 55);
 $color-white-500: rgb(255 255 255);
 $color-black-500: rgb(0 0 0);
@@ -47,7 +48,9 @@ $title-dark: $color-grey-700;
 $title-light: $color-white-500;
 $subtitle: $color-grey-100;
 $data-text: $color-orange-300;
-
+$language-button: $color-orange-300;
+$language-button-hover: $color-orange-400;
+$language-button-active: $color-orange-500;
 
 // ===== TYPOGRAPHY =====
 $font-family-futura: "Futura PT", sans-serif;
