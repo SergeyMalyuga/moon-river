@@ -1,0 +1,55 @@
+{
+  "hero": {
+    "link": {
+      "collections": "Look at a collection"
+    },
+    "title": {
+      "product": "Ring Trinity, Cartier",
+      "phone": "The phone hotline",
+      "subscribe": "Subscribe to the news"
+    },
+    "subtitle": {
+      "collection": "New collection by Mercury",
+      "product": "White gold , diamonds"
+    },
+    "placeholder": {
+      "email": "Enter your E-mail"
+    }
+  },
+  "navigation": {
+    "nav": {
+      "jewellery": "Jewellery",
+      "watch": "Watch",
+      "flavors": "Flavors",
+      "brands": "Brands",
+      "leather-goods": "Leather goods",
+      "bridal-jewelry": "Bridal jewelry",
+      "another": "Another"
+    },
+    "categories": {
+      "title": {
+        "for-whom": "For whom",
+        "categories": "Categories",
+        "material": "Material",
+        "brand": "Brand"
+      },
+      "items": {
+        "for-women": "For women",
+        "for-men": "For men",
+        "for-kids": "For kids",
+        "rings": "Rings",
+        "wristbands": "Wristbands",
+        "necklace": "Necklace",
+        "earrings": "Earrings",
+        "brooches": "Brooches",
+        "jewelry-diamonds": "Jewelry with the diamonds",
+        "yellow-gold": "Yellow gold",
+        "white-gold": "White gold",
+        "pink-gold": "Pink gold",
+        "all-brands": "Show all brands"
+      }
+    }
+  }
+}
+
+

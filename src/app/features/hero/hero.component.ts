@@ -1,11 +1,13 @@
 import {ChangeDetectionStrategy, Component, EventEmitter, Input, Output} from '@angular/core';
 import {ChangeLanguageDirective} from './directives/change-language.directive';
 import {Language} from '../../core/constants/const';
+import {TranslatePipe} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-hero',
   imports: [
-    ChangeLanguageDirective
+    ChangeLanguageDirective,
+    TranslatePipe
   ],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss',

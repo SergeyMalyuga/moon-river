@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {Component, inject} from '@angular/core';
+import {RouterOutlet} from '@angular/router';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +9,10 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'moon-river';
+  private translate = inject(TranslateService);
+
+  constructor() {
+    this.translate.setFallbackLang('ru');
+    this.translate.use('ru');
+  }
 }

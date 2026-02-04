@@ -9,10 +9,11 @@ import { MatBadge } from '@angular/material/badge';
 import { ToggleDirective } from '../../shared/directives/toggle.directive';
 import { SelectCategoryDirective } from './directives/select-category.directive';
 import { ProductCategory } from '../../core/constants/const';
+import {TranslatePipe} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
-  imports: [MatBadge, ToggleDirective, SelectCategoryDirective],
+  imports: [MatBadge, ToggleDirective, SelectCategoryDirective, TranslatePipe],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

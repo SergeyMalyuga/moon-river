@@ -1,0 +1,65 @@
+{
+  "hero": {
+    "link": {
+      "collections": "Смотреть коллекцию"
+    },
+    "title": {
+      "product": "Кольцо Trinity, Cartier",
+      "phone": "Телефон горячей линии",
+      "subscribe": "Подпишитесь на новости"
+    },
+    "subtitle": {
+      "collection": "Новая коллекция by Mercury",
+      "product": "Белое золото, бриллианты"
+    },
+    "placeholder": {
+      "email": "Введите E-mail"
+    }
+  },
+  "navigation": {
+    "nav": {
+      "jewellery": "ювелирные изделия",
+      "watch": "часы",
+      "flavors": "ароматы",
+      "brands": "бренды",
+      "leather-goods": "изделия из кожи",
+      "bridal-jewelry": "cвадебные украшения",
+      "another": "другое"
+    },
+    "categories": {
+      "title": {
+        "for-whom": "Для кого",
+        "categories": "Категории",
+        "material": "Материал",
+        "brand": "Бренд"
+      },
+      "items": {
+        "for-women": "Для женщин",
+        "for-men": "Для мужчин",
+        "for-kids": "Для детей",
+        "rings": "Кольца",
+        "wristbands": "Браслеты",
+        "necklace": "Колье",
+        "earrings": "Серьги",
+        "brooches": "Броши",
+        "jewelry-diamonds": "Изделия с бриллиантами",
+        "yellow-gold": "Желтое золото",
+        "white-gold": "Белое золото",
+        "pink-gold": "Розовое золото",
+        "all-brands": "Показать все бренды"
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

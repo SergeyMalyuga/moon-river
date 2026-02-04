@@ -13,6 +13,6 @@ export enum ProductCategory {
 }
 
 export enum Language {
-  RU = 'RU',
-  EN = 'EN'
+  RU = 'ru',
+  EN = 'en'
 }

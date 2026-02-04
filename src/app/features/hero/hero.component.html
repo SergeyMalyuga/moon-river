@@ -3,7 +3,7 @@
   <div class="hero__content container" [class.dark-theme]="isDarkTheme">
     <div class="hero__wrapper-column-left">
       <h1 class="hero__title-main">High jewelry</h1>
-      <a class="hero__link hero__link-collections" href="#">Смотреть коллекцию</a>
+      <a class="hero__link hero__link-collections" href="#">{{'hero.link.collections' | translate}}</a>
       <ul class="hero__list-languages">
         <li class="hero__item-language">
           <button appChangeLanguage [currentLanguage]="currentLanguage" [buttonLanguage]="Language.RU"
@@ -29,8 +29,8 @@
             alt="Кольцо Trinity от Cartier: три кольца из белого золота с бриллиантами">
         </div>
         <figcaption class="hero__wrapper-product-info">
-          <h2 class="hero__title-product">Кольцо Trinity, Cartier</h2>
-          <div class="hero__subtitle-product">Белое золото, бриллианты</div>
+          <h2 class="hero__title-product">{{'hero.title.product' | translate}}</h2>
+          <div class="hero__subtitle-product">{{'hero.subtitle.product' | translate}}</div>
           <data class="hero__data-price" value="498000">498 000 ₽</data>
         </figcaption>
       </a>
