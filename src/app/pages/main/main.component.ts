@@ -3,10 +3,11 @@ import {HeaderComponent} from '../../features/header/header.component';
 import {HeroComponent} from '../../features/hero/hero.component';
 import {Language} from '../../core/constants/const';
 import {TranslateService} from '@ngx-translate/core';
+import {CategoriesComponent} from '../../features/categories/categories.component';
 
 @Component({
   selector: 'app-main',
-  imports: [HeaderComponent, HeroComponent],
+  imports: [HeaderComponent, HeroComponent, CategoriesComponent],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

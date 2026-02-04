@@ -1,0 +1,23 @@
+@use '../../../styles/variables' as variables;
+
+.categories {
+  &__list {
+    &-categories {
+      display: flex;
+      gap: 20px;
+    }
+  }
+
+  &__wrapper {
+    &-image {
+      display: block;
+      max-width: 710px;
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
