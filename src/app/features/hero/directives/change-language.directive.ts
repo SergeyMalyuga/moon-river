@@ -7,15 +7,15 @@ import {Language} from '../../../core/constants/const';
 export class ChangeLanguageDirective {
   @Input({required: true}) currentLanguage!: Language;
   @Input({required: true}) buttonLanguage!: Language;
-  @Output() languageChanged = new EventEmitter<void>();
+  @Output() languageChanged = new EventEmitter<Language>();
 
-  @HostBinding('class.hero-active')
-  isActive() {
+  @HostBinding('class.hero__button-active')
+  get isActive() {
     return this.currentLanguage === this.buttonLanguage;
   }
 
   @HostListener('click')
   onClick() {
-    this.languageChanged.emit();
+    this.languageChanged.emit(this.buttonLanguage);
   }
 }

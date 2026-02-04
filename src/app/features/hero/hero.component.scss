@@ -252,10 +252,15 @@
       }
 
     }
+
+    &-active {
+      color: variables.$hero-button-text-active;
+      pointer-events: none;
+    }
   }
 
-  &__active {
+/*  &__active {
     color: variables.$hero-button-text-active;
     pointer-events: none;
-  }
+  }*/
 }

@@ -6,28 +6,34 @@
       <a class="hero__link hero__link-collections" href="#">Смотреть коллекцию</a>
       <ul class="hero__list-languages">
         <li class="hero__item-language">
-          <button class="hero__button-language hero__active" type="button" aria-label="Переключить на русский язык">ru</button>
+          <button appChangeLanguage [currentLanguage]="currentLanguage" [buttonLanguage]="Language.RU"
+                  (languageChanged)="onLanguageChange($event)"
+                  class="hero__button-language" type="button" aria-label="Переключить на русский язык">ru
+          </button>
         </li>
         <li class="hero__item-language">
-          <button class="hero__button-language" type="button" aria-label="Switch to english">en</button>
+          <button appChangeLanguage [currentLanguage]="currentLanguage" [buttonLanguage]="Language.EN"
+                  (languageChanged)="onLanguageChange($event)"
+                  class="hero__button-language" type="button" aria-label="Switch to english">en
+          </button>
         </li>
       </ul>
     </div>
-      <figure class="hero__wrapper-column-right">
-        <a href="#" class="hero__link hero__link-product">
-          <div class="hero__wrapper-image">
-            <img
-              src="./assets/images/raster/hero-ring.png"
-              width="322"
-              height="170"
-              alt="Кольцо Trinity от Cartier: три кольца из белого золота с бриллиантами">
-          </div>
-          <figcaption class="hero__wrapper-product-info">
-            <h2 class="hero__title-product">Кольцо Trinity, Cartier</h2>
-            <div class="hero__subtitle-product">Белое золото, бриллианты</div>
-            <data class="hero__data-price" value="498000">498 000 ₽</data>
-          </figcaption>
-        </a>
-      </figure>
+    <figure class="hero__wrapper-column-right">
+      <a href="#" class="hero__link hero__link-product">
+        <div class="hero__wrapper-image">
+          <img
+            src="./assets/images/raster/hero-ring.png"
+            width="322"
+            height="170"
+            alt="Кольцо Trinity от Cartier: три кольца из белого золота с бриллиантами">
+        </div>
+        <figcaption class="hero__wrapper-product-info">
+          <h2 class="hero__title-product">Кольцо Trinity, Cartier</h2>
+          <div class="hero__subtitle-product">Белое золото, бриллианты</div>
+          <data class="hero__data-price" value="498000">498 000 ₽</data>
+        </figcaption>
+      </a>
+    </figure>
   </div>
 </section>

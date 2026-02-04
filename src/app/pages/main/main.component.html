@@ -1,4 +1,4 @@
 <app-header (navToggled)="onNavToggled($event)" />
 <main role="main">
-  <app-hero [isDarkTheme]="isNavOpen()" />
+  <app-hero [isDarkTheme]="isNavOpen()" [currentLanguage]="currentLanguage()" (languageChanged)="changeLanguage($event)"/>
 </main>

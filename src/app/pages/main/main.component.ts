@@ -17,4 +17,8 @@ export class MainComponent {
   public onNavToggled(isNavOpen: boolean) {
     this.isNavOpen.set(isNavOpen);
   }
+
+  public changeLanguage(language: Language): void {
+    this.currentLanguage.set(language);
+  }
 }
