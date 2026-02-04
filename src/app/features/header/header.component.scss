@@ -323,6 +323,7 @@
       transform: translate(-50%, -150%);
       background-color: variables.$navigation-overlay-background;
       transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      z-index: 1;
 
       &.open {
         transition: transform 0.8s 0.9s ease;

@@ -1,7 +1,7 @@
 @use "../../../styles/variables" as variables;
 
 .hero {
-  //height: 95vh;
+  height: 95vh;
   padding-top: 153px;
   padding-bottom: 60px;
   background: linear-gradient(
@@ -159,7 +159,6 @@
 
     &:hover {
       color: variables.$link-color-hover-on-light;
-      mix-blend-mode: normal;
 
       &::before {
         background-color: variables.$link-color-hover-on-light;

@@ -11,3 +11,8 @@ export enum ProductCategory {
   WEDDING_DECORATIONS = 'wedding decorations',
   OTHER = 'other',
 }
+
+export enum Language {
+  RU = 'RU',
+  EN = 'EN'
+}
