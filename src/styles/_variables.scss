@@ -11,6 +11,10 @@ $color-grey-200: rgb(196 196 196);
 $color-grey-600: rgb(47 47 47);
 $color-grey-700: rgb(39 39 39);
 
+/* OVERLAY */
+
+$overlay: rgb(0 0 0 / 40%);
+
 /* INTERACTIVE */
 $color-interactive-hover: $color-orange-300;
 $color-interactive-active: $color-orange-500;
@@ -40,6 +44,8 @@ $link-hover: $color-interactive-hover;
 $link-action: $color-interactive-active;
 $link-all-brands: $color-orange-300;
 $link-active: $color-orange-300;
+$link-text-light: $color-white-500;
+$link-line-light: $color-white-500;
 
 /* hero */
 
