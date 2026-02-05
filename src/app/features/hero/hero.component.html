@@ -3,18 +3,25 @@
   <div class="hero__content container" [class.dark-theme]="isDarkTheme">
     <div class="hero__wrapper-column-left">
       <h1 class="hero__title-main">High jewelry</h1>
-      <a class="hero__link hero__link-collections" href="#">{{'hero.link.collections' | translate}}</a>
+      <a class="hero__link hero__link-collections" href="#">{{ 'hero.link.collections' | translate }}</a>
       <ul class="hero__list-languages">
         <li class="hero__item-language">
           <button appChangeLanguage [currentLanguage]="currentLanguage" [buttonLanguage]="Language.RU"
                   (languageChanged)="onLanguageChange($event)"
-                  class="hero__button-language" type="button" aria-label="Переключить на русский язык">ru
+                  class="hero__button-language" [disabled]="currentLanguage === Language.RU"
+                  [attr.aria-label]="currentLanguage === Language.RU
+    ? 'Русский (текущий)'
+    : 'Переключить на русский'" type="button" >ru
           </button>
         </li>
         <li class="hero__item-language">
           <button appChangeLanguage [currentLanguage]="currentLanguage" [buttonLanguage]="Language.EN"
                   (languageChanged)="onLanguageChange($event)"
-                  class="hero__button-language" type="button" aria-label="Switch to english">en
+                  class="hero__button-language" [disabled]="currentLanguage === Language.EN"
+                  [attr.aria-label]="currentLanguage === Language.EN
+    ? 'English (current)'
+    : 'Switch to english'" type="button"
+            aria-label="Switch to english">en
           </button>
         </li>
       </ul>
@@ -29,8 +36,8 @@
             alt="Кольцо Trinity от Cartier: три кольца из белого золота с бриллиантами">
         </div>
         <figcaption class="hero__wrapper-product-info">
-          <h2 class="hero__title-product">{{'hero.title.product' | translate}}</h2>
-          <div class="hero__subtitle-product">{{'hero.subtitle.product' | translate}}</div>
+          <h2 class="hero__title-product">{{ 'hero.title.product' | translate }}</h2>
+          <div class="hero__subtitle-product">{{ 'hero.subtitle.product' | translate }}</div>
           <data class="hero__data-price" value="498000">498 000 ₽</data>
         </figcaption>
       </a>
