@@ -33,7 +33,6 @@ body {
 }
 
 .container {
-  //max-width: 1145px; //TODO delete later
   max-width: 1440px;
   width: 100%;
   padding: 0 15px;
@@ -69,6 +68,11 @@ body {
 
 .open {
   display: block !important;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
 }
 
 .visually-hidden {

@@ -25,6 +25,7 @@ $hero-gradient-end: $color-grey-700;
 $hero-background: $color-grey-700;
 $navigation-overlay-background: $color-grey-700;
 $navigation-background: $color-grey-600;
+$store-selector-bg: $color-grey-700;
 
 /* КОМПОНЕНТЫ */
 
@@ -80,7 +81,16 @@ $navigation-overlay-arrow: $color-orange-300;
 $subtitle: $color-grey-100;
 $data-text: $color-orange-300;
 
+/* store-selector */
+$store-selector-address-border: $color-white-500;
+$store-selector-address-border-focus: $color-orange-500;
+$store-selector-address-border-hover: $color-orange-300;
 
 // ===== TYPOGRAPHY =====
 $font-family-futura: "Futura PT", sans-serif;
 $font-family-forum: "Forum", serif;
+
+/* text */
+
+$text-dark: $color-grey-700;
+$text-light: $color-white-500;

@@ -1,0 +1,128 @@
+@use '../../../styles/variables' as variables;
+
+.store-selector {
+  background-color: variables.$store-selector-bg;
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @media (width <= 1023px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 1fr);
+    }
+  }
+
+  &__wrapper {
+    &-input-address {
+      display: flex;
+      justify-content: center;
+      padding: 171px 0;
+
+      @media (width <= 599px) {
+        padding: 75px 0;
+      }
+    }
+
+    &-submit {
+      display: flex;
+    }
+  }
+
+  &__form-content {
+    max-width: 386px;
+    width: 100%;
+  }
+
+  &__title {
+    &-main {
+      color: variables.$title-light;
+      font-family: variables.$font-family-forum;
+      font-style: normal;
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 53px;
+      letter-spacing: 0.03em;
+      text-align: left;
+      margin-bottom: 16px;
+
+      span {
+        display: block;
+      }
+
+      @media (width <= 599px) {
+        font-size: 32px;
+        line-height: 32px;
+      }
+    }
+  }
+
+  &__text {
+    &-main {
+      color: variables.$text-light;
+      font-family: variables.$font-family-futura;
+      font-style: normal;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 22px;
+      letter-spacing: 0;
+      text-align: left;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__input {
+    &-email {
+      width: 100%;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1.8px solid variables.$store-selector-address-border;
+      cursor: pointer;
+      transition: border-color 0.5s ease;
+
+      &:hover {
+        border-color: variables.$store-selector-address-border-hover;
+      }
+
+      &:focus {
+        outline: none;
+        border-color: variables.$store-selector-address-border-focus;
+      }
+    }
+  }
+
+  &__button {
+    &-submit {
+      background-color: transparent;
+      padding: 0;
+      border: none;
+      cursor: pointer;
+
+      &::before {
+        content: '';
+        display: block;
+        width: 28px;
+        height: 15px;
+        background-color: variables.$button-main;
+        mask-image: url("../../../assets/images/vector/navigation-overlay-arrow-small.svg");
+        mask-repeat: no-repeat;
+        mask-size: cover;
+        mask-position: center;
+        transition: background-color 0.5s ease, transform 0.5s ease;
+      }
+
+      &:hover {
+        &::before {
+          background-color: variables.$button-hover;
+          transform: translateX(10px);
+        }
+      }
+
+      &:active {
+        &::before {
+          background-color: variables.$button-action;
+        }
+      }
+    }
+  }
+}

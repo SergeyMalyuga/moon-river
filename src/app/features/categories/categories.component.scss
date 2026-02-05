@@ -1,6 +1,8 @@
 @use '../../../styles/variables' as variables;
 
 .categories {
+  margin-bottom: 20px;
+
   &__content {
     padding: 0;
   }

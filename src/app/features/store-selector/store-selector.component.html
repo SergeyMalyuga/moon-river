@@ -1,1 +1,18 @@
-<p>store-selector works!</p>
+<section class="store-selector">
+  <div class="store-selector__content container">
+    <form class="store-selector__wrapper-input-address">
+      <div class="store-selector__form-content">
+        <h2 class="store-selector__title-main">
+          <span>Найди </span>
+          <span>бутик около себя</span></h2>
+        <p class="store-selector__text-main">Введите свой адрес и узнайте о самых ближайших бутиках к вам</p>
+        <label for="store-selector-email" class="store-selector__label-email visually-hidden">Введите email</label>
+        <div class="store-selector__wrapper-submit">
+          <input id="store-selector-email" class="store-selector__input-email" type="email"/>
+          <button class="store-selector__button-submit" type="submit"></button>
+        </div>
+      </div>
+    </form>
+      <app-map/>
+  </div>
+</section>
