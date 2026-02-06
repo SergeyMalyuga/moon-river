@@ -2,6 +2,7 @@
 
 .store-selector {
   background-color: variables.$store-selector-bg;
+  margin-bottom: 20px;
 
   &__content {
     display: grid;
