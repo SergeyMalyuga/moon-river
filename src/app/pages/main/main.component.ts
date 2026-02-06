@@ -5,10 +5,11 @@ import {Language} from '../../core/constants/const';
 import {TranslateService} from '@ngx-translate/core';
 import {CategoriesComponent} from '../../features/categories/categories.component';
 import {StoreSelectorComponent} from '../../features/store-selector/store-selector.component';
+import {ProductsComponent} from '../../features/products/products.component';
 
 @Component({
   selector: 'app-main',
-  imports: [HeaderComponent, HeroComponent, CategoriesComponent, StoreSelectorComponent],
+  imports: [HeaderComponent, HeroComponent, CategoriesComponent, StoreSelectorComponent, ProductsComponent],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
