@@ -72,13 +72,21 @@
   }
 
   &__input {
-    &-email {
+    &-address {
+      padding: 9px 15px;
       width: 100%;
       background-color: transparent;
       border: none;
       border-bottom: 1.8px solid variables.$store-selector-address-border;
-      cursor: pointer;
       transition: border-color 0.5s ease;
+      color: variables.$text-light;
+      font-family: variables.$font-family-futura;
+      font-style: normal;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 22px;
+      letter-spacing: 0%;
+      text-align: left;
 
       &:hover {
         border-color: variables.$store-selector-address-border-hover;
@@ -88,6 +96,12 @@
         outline: none;
         border-color: variables.$store-selector-address-border-focus;
       }
+
+      &::placeholder {
+        color: variables.$text-light;
+      }
+
+
     }
   }
 

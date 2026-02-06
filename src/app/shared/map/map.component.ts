@@ -28,6 +28,7 @@ export class MapComponent implements OnInit {
       center: this.centroid,
       zoom: 13,
       zoomControl: false,
+      attributionControl: false,
     });
 
     const tiles = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {
