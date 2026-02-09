@@ -2,6 +2,7 @@
 
 /* BASE */
 $color-orange-300: rgb(239 197 139);
+$color-orange-350: rgb(226 182 122);
 $color-orange-400: rgb(225 180 120);
 $color-orange-500: rgb(237 155 55);
 $color-white-500: rgb(255 255 255);
@@ -9,6 +10,7 @@ $color-black-500: rgb(0 0 0);
 $color-grey-50: rgb(237 237 237);
 $color-grey-100: rgb(194 194 194);
 $color-grey-200: rgb(196 196 196);
+$color-grey-500: rgb(117 117 117);
 $color-grey-600: rgb(47 47 47);
 $color-grey-700: rgb(39 39 39);
 
@@ -69,6 +71,15 @@ $footer-email-border-hover: $color-orange-300;
 
 $title-dark: $color-grey-700;
 $title-light: $color-white-500;
+
+/* subtitle */
+
+$subtitle-text-dark: $color-grey-500;
+$subtitle-text-light: $color-grey-50;
+
+/* price */
+
+$price-text-dark: $color-orange-350;
 
 /* language */
 
