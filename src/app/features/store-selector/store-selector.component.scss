@@ -1,7 +1,7 @@
 @use '../../../styles/variables' as variables;
 
 .store-selector {
-  background-color: variables.$store-selector-bg;
+  background-color: variables.$section-bg-dark;
   margin-bottom: 20px;
 
   &__content {

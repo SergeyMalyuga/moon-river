@@ -1,0 +1,27 @@
+@use '../../../styles/variables' as variables;
+
+.social {
+  background-color: variables.$section-bg-dark;
+
+  &__content {
+    padding: 0;
+  }
+
+  &__title {
+    &-main {
+      color: variables.$title-light;
+      font-family: variables.$font-family-forum;
+      font-style: normal;
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 53px;
+      letter-spacing: 3%;
+      text-align: left;
+      padding: 100px 0 80px 162px;
+
+      span {
+        display: block;
+      }
+    }
+  }
+}
