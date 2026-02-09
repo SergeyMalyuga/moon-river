@@ -1,6 +1,9 @@
 @use "./styles/fonts";
 @use "./styles/variables" as variables;
 @import "../node_modules/leaflet/dist/leaflet.css";
+@import "../node_modules/swiper/swiper.css";
+@import "../node_modules/swiper/modules/navigation.min.css";
+@import "../node_modules/swiper/modules/pagination.min.css";
 
 *,
 *::before,
