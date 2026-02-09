@@ -3,6 +3,7 @@
 @import "../node_modules/leaflet/dist/leaflet.css";
 @import "../node_modules/swiper/swiper.css";
 @import "../node_modules/swiper/modules/navigation.min.css";
+@import "../node_modules/swiper/modules/navigation-element.min.css";
 @import "../node_modules/swiper/modules/pagination.min.css";
 
 *,
@@ -77,6 +78,10 @@ body {
   width: 100%;
   height: 100%;
 }
+
+.swiper-slide {
+  flex-shrink: 1;
+ }
 
 .visually-hidden {
   position: absolute;
