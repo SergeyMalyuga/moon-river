@@ -81,14 +81,36 @@ body {
 
 .swiper-slide {
   flex-shrink: 1;
- }
+}
+
+.swiper-button {
+  position: static;
+
+  svg {
+    display: none;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 53px;
+    height: 21px;
+    background-color: variables.$swiper-button-nav-bg;
+    mask-repeat: no-repeat;
+    mask-size: cover;
+  }
+}
 
 .swiper-button-prev {
-  position: static;
+  &::before {
+    mask-image: url("./assets/images/vector/swiper-nav-prev.svg");
+  }
 }
 
 .swiper-button-next {
-  position: static;
+  &::before {
+    mask-image: url("./assets/images/vector/swiper-nav-next.svg");
+  }
 }
 
 .swiper-pagination {
