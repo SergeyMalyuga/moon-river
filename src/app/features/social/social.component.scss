@@ -24,4 +24,11 @@
       }
     }
   }
+
+  &__wrapper {
+    &-swiper-controllers {
+      display: flex;
+      align-items: center;
+    }
+  }
 }

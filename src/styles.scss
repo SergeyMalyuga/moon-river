@@ -83,6 +83,27 @@ body {
   flex-shrink: 1;
  }
 
+.swiper-button-prev {
+  position: static;
+}
+
+.swiper-button-next {
+  position: static;
+}
+
+.swiper-pagination {
+  position: static;
+}
+
+.swiper-pagination-bullet {
+  background-color: variables.$swiper-bullet-bg;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: variables.$swiper-bullet-active-bg;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
