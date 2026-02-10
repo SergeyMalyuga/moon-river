@@ -84,7 +84,11 @@ body {
 }
 
 .swiper-button {
-  position: static;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 
   svg {
     display: none;
@@ -98,6 +102,11 @@ body {
     background-color: variables.$swiper-button-nav-bg;
     mask-repeat: no-repeat;
     mask-size: cover;
+    mask-position: center;
+  }
+
+  @media (width <= 790px) {
+    display: none;
   }
 }
 
@@ -124,6 +133,35 @@ body {
 
 .swiper-pagination-bullet-active {
   background-color: variables.$swiper-bullet-active-bg;
+}
+
+.list {
+  &-social {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.link {
+  &-social {
+    display: block;
+    color: variables.$color-white-500;
+    transition: color 0.5s ease, transform 0.5s ease;
+
+    &:hover {
+      color: variables.$link-hover;
+      transform: scale(0.9);
+    }
+
+    &:active {
+      color: variables.$link-action;
+    }
+  }
+}
+
+.swiper-button-next, .swiper-button-prev {
+  margin-top: 0;
+  top: 0;
 }
 
 .visually-hidden {
