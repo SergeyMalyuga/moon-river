@@ -1,0 +1,83 @@
+@use '../../../styles/variables' as variables;
+@use '../../../styles/abstacts/mixins' as mixins;
+
+.contacts {
+  &__content {
+    display: flex;
+    padding: 0;
+
+    @media (width <= 760px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 70px;
+    }
+  }
+
+  &__title {
+    &-info {
+      color: variables.$title-dark;
+      font-family: variables.$font-family-futura;
+      font-style: normal;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 5%;
+      text-align: left;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__wrapper {
+    &-subscribe {
+      display: flex;
+    }
+
+    &-info {
+      display: flex;
+      padding: 0 10px;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-image {
+      max-width: 710px;
+      width: 100%;
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  &__phone {
+    max-width: 320px;
+    width: 100%;
+    margin-bottom: 110px;
+
+    @media (width <= 760px) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__subscribe {
+    max-width: 320px;
+    width: 100%;
+  }
+
+  &__input {
+    &-subscribe {
+      @include mixins.input(variables.$contacts-email-border, variables.$contacts-input-text);
+    }
+  }
+
+  &__button {
+    &-subscribe {
+      @include mixins.button-submit(variables.$contacts-button-subscribe-bg);
+    }
+  }
+}

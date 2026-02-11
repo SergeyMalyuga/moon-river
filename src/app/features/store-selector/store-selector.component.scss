@@ -1,4 +1,5 @@
 @use '../../../styles/variables' as variables;
+@use '../../../styles/abstacts/mixins' as mixins;
 
 .store-selector {
   background-color: variables.$section-bg-dark;
@@ -74,70 +75,13 @@
 
   &__input {
     &-address {
-      padding: 9px 15px;
-      width: 100%;
-      background-color: transparent;
-      border: none;
-      border-bottom: 1.8px solid variables.$store-selector-address-border;
-      transition: border-color 0.5s ease;
-      color: variables.$text-light;
-      font-family: variables.$font-family-futura;
-      font-style: normal;
-      font-size: 18px;
-      font-weight: 300;
-      line-height: 22px;
-      letter-spacing: 0%;
-      text-align: left;
-
-      &:hover {
-        border-color: variables.$store-selector-address-border-hover;
-      }
-
-      &:focus {
-        outline: none;
-        border-color: variables.$store-selector-address-border-focus;
-      }
-
-      &::placeholder {
-        color: variables.$text-light;
-      }
-
-
+      @include mixins.input(variables.$store-selector-address-border, variables.$text-light);
     }
   }
 
   &__button {
     &-submit {
-      background-color: transparent;
-      padding: 0;
-      border: none;
-      cursor: pointer;
-
-      &::before {
-        content: '';
-        display: block;
-        width: 28px;
-        height: 15px;
-        background-color: variables.$button-main;
-        mask-image: url("../../../assets/images/vector/navigation-overlay-arrow-small.svg");
-        mask-repeat: no-repeat;
-        mask-size: cover;
-        mask-position: center;
-        transition: background-color 0.5s ease, transform 0.5s ease;
-      }
-
-      &:hover {
-        &::before {
-          background-color: variables.$button-hover;
-          transform: translateX(10px);
-        }
-      }
-
-      &:active {
-        &::before {
-          background-color: variables.$button-action;
-        }
-      }
+      @include mixins.button-submit(variables.$button-main);
     }
   }
 }

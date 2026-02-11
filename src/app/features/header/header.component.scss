@@ -453,14 +453,6 @@
       }
     }
 
-    &-phone {
-      @include mixins.footer-contact-text;
-
-      display: inline-block;
-      text-decoration: none;
-      margin-bottom: 15px;
-    }
-
     &-store {
       display: block;
       transition: transform 0.5s ease;
