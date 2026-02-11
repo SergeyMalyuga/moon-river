@@ -8,10 +8,11 @@ import {StoreSelectorComponent} from '../../features/store-selector/store-select
 import {ProductsComponent} from '../../features/products/products.component';
 import {SocialComponent} from '../../features/social/social.component';
 import {ContactsComponent} from '../../features/contacts/contacts.component';
+import {FooterComponent} from '../../features/footer/footer.component';
 
 @Component({
   selector: 'app-main',
-  imports: [HeaderComponent, HeroComponent, CategoriesComponent, StoreSelectorComponent, ProductsComponent, SocialComponent, ContactsComponent],
+  imports: [HeaderComponent, HeroComponent, CategoriesComponent, StoreSelectorComponent, ProductsComponent, SocialComponent, ContactsComponent, FooterComponent],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

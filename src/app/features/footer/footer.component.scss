@@ -1,0 +1,6 @@
+@use '../../../styles/variables' as variables;
+
+.footer-main {
+  padding: 80px 0 90px;
+  background-color: variables.$section-bg-dark;
+}
