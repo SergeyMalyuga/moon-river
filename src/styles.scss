@@ -63,6 +63,44 @@ body {
   &:focus {
     outline: none;
   }
+
+  &-subscribe {
+      background-color: transparent;
+      padding: 0;
+      border: none;
+      cursor: pointer;
+
+      &::after {
+        content: "";
+        display: block;
+        font-size: 300px;
+        width: 30px;
+        height: 17px;
+        background-color: variables.$color-white-500;
+        mask-image: url("./assets/images/vector/navigation-overlay-arrow-small.svg");
+        mask-repeat: no-repeat;
+        mask-size: cover;
+        mask-position: center;
+        transition: background-color 0.5s ease, transform 0.5s ease;
+      }
+
+      &:hover {
+        &::after {
+          background-color: variables.$button-hover;
+          transform: translateX(10px);
+        }
+      }
+
+      &:active {
+        &::after {
+          background-color: variables.$button-action;
+        }
+      }
+
+      &:focus {
+        outline: 1px solid variables.$color-orange-500;
+      }
+  }
 }
 
 .light-theme {
@@ -197,11 +235,47 @@ body {
       color: variables.$link-action;
     }
   }
+
+  &-store {
+    display: block;
+    transition: transform 0.5s ease;
+
+    &:hover {
+      transform: scale(0.9);
+    }
+  }
 }
 
 .swiper-button-next, .swiper-button-prev {
   margin-top: 0;
   top: 0;
+}
+
+.input {
+  &-email {
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1.8px solid variables.$footer-email-border;
+    transition: border-color 0.5s ease;
+
+    @include mixins.footer-contact-text;
+
+    &::placeholder {
+      @include mixins.footer-contact-text;
+    }
+
+    &:hover {
+      border-color: variables.$footer-email-border-hover;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: variables.$footer-email-border-focus;
+    }
+  }
 }
 
 .visually-hidden {

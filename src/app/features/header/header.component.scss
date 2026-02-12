@@ -198,7 +198,7 @@
       }
     }
 
-    &-subscribe {
+    /*&-subscribe {
       background-color: transparent;
       padding: 0;
       border: none;
@@ -234,7 +234,7 @@
       &:focus {
         outline: 1px solid variables.$color-orange-500;
       }
-    }
+    }*/
   }
 
   &__line {
@@ -452,15 +452,6 @@
         color: variables.$link-action;
       }
     }
-
-    &-store {
-      display: block;
-      transition: transform 0.5s ease;
-
-      &:hover {
-        transform: scale(0.9);
-      }
-    }
   }
 
   &__subtitle {
@@ -473,7 +464,7 @@
     margin-bottom: 48px;
   }
 
-  &__input {
+/*  &__input {
     &-email {
       display: flex;
       width: 100%;
@@ -498,7 +489,7 @@
         border-color: variables.$footer-email-border-focus;
       }
     }
-  }
+  }*/
 
   &__form {
     &-subscribe {

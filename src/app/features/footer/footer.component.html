@@ -1,6 +1,6 @@
-<section class="footer-main">
+<footer class="footer-main" role="contentinfo">
   <div class="footer-main__content container">
-    <nav class="footer-main__nav">
+    <nav class="footer-main__nav" aria-label="Навигация по сайту">
       <ul class="footer-main__list-nav">
         <li class="footer-main__item-nav-link">
           <a href="#" class="link-nav footer-main__link-nav">
@@ -30,15 +30,15 @@
       </ul>
     </nav>
     <div class="footer-main__wrapper-info">
-      <a class="footer-main__link-logo" href="#">
+      <a class="footer-main__link-logo" href="#" aria-label="На главную страницу">
         <svg width="258" height="53">
           <use href="./assets/images/vector/logo.svg#logo"/>
         </svg>
       </a>
-      <div class="header-main__wrapper-column-right">
-        <div class="header-main__contacts">
-          <h3 class="header-main__title-contact">{{ 'hero.title.phone' | translate }}</h3>
-          <a class="link-phone" href="tel:+7800456456">+7 800 456 456</a>
+      <div class="footer-main__wrapper-column-right">
+        <div class="footer-main__contacts">
+          <h3 class="footer-main__title-contact">{{ 'hero.title.phone' | translate }}</h3>
+          <a class="link-phone" href="tel:+7800456456" aria-label="Телефон для связи">+7 800 456 456</a>
           <ul class="list-social">
             <li>
               <a class="link-social" href="#" aria-label="FaceBook">
@@ -56,31 +56,31 @@
             </li>
           </ul>
         </div>
-        <form class="header-main__form-subscribe">
-          <h3 class="header-main__title-subscribe">{{ 'hero.title.subscribe' | translate }}</h3>
-          <div class="header-main__wrapper-footer">
-            <label for="header-main-email" class="header-main__label-email visually-hidden">Введите e-mail</label>
-            <input id="header-main-email" class="header-main__input-email" type="email" placeholder="{{ 'hero.placeholder.email' | translate }}">
-            <button class="header-main__button-subscribe"></button>
+        <form class="footer-main__form-subscribe">
+          <h3 class="footer-main__title-subscribe">{{ 'hero.title.subscribe' | translate }}</h3>
+          <div class="footer-main__wrapper-footer">
+            <label for="footer-main-email" class="footer-main__label-email visually-hidden">Введите e-mail</label>
+            <input id="footer-main-email" class="input-email" type="email" placeholder="{{ 'hero.placeholder.email' | translate }}">
+            <button class="button-subscribe" type="submit"></button>
           </div>
+          <ul class="footer-main__list-store">
+            <li>
+              <a href="#" class="link-store" aria-label="Скачать из app store">
+                <svg width="90" height="30">
+                  <use href="./assets/images/vector/navigation-overlay-apple-store.svg#apple-store-badge"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="link-store" aria-label="скачать из google play">
+                <svg width="90" height="30">
+                  <use href="./assets/images/vector/navigation-overlay-google-play.svg#google-play-badge"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </form>
-        <ul class="header-main__list-store">
-          <li>
-            <a href="#" class="header-main__link-store" aria-label="Скачать из app store">
-              <svg width="90" height="30">
-                <use href="./assets/images/vector/navigation-overlay-apple-store.svg#apple-store-badge"/>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="header-main__link-store" скачать из google play>
-              <svg width="90" height="30">
-                <use href="./assets/images/vector/navigation-overlay-google-play.svg#google-play-badge"/>
-              </svg>
-            </a>
-          </li>
-        </ul>
       </div>
     </div>
   </div>
-</section>
+</footer>

@@ -1,4 +1,5 @@
 @use '../../../styles/variables' as variables;
+@use '../../../styles/abstacts/mixins' as mixins;
 
 .footer-main {
   padding: 80px 0 90px;
@@ -8,6 +9,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media (width <= 662px) {
+      align-items: start;
+    }
   }
 
   &__link {
@@ -17,6 +22,10 @@
 
     &-logo {
       color: variables.$color-white-500;
+
+      @media (width <= 834px) {
+        margin-bottom: 50px;
+      }
     }
   }
 
@@ -35,6 +44,11 @@
         flex-direction: column;
       }
     }
+
+    &-store {
+      display: flex;
+      gap: 7px;
+    }
   }
 
   &__wrapper {
@@ -43,6 +57,36 @@
       width: 100%;
       display: flex;
       justify-content: space-between;
+
+      @media (width <= 834px) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    &-footer {
+      display: flex;
+      margin-bottom: 17px;
+    }
+
+    &-column {
+      &-right {
+        display: flex;
+        gap: 80px;
+
+        @media (width <= 520px) {
+          flex-direction: column;
+          align-self: start;
+        }
+      }
+    }
+  }
+
+  &__title {
+    &-contact, &-subscribe {
+      @include mixins.footer-title-text;
+
+      margin-bottom: 15px;
     }
   }
 }
