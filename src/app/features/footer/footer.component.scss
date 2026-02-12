@@ -3,4 +3,28 @@
 .footer-main {
   padding: 80px 0 90px;
   background-color: variables.$section-bg-dark;
+
+  &__content {
+    //padding: 0 162px;
+  }
+
+  &__link {
+    &-nav {
+      font-size: 14px;
+    }
+  }
+
+  &__list {
+    &-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 72px;
+      row-gap: 20px;
+
+      @media (width <= 662px) {
+        flex-direction: column;
+      }
+    }
+  }
 }

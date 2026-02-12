@@ -175,6 +175,28 @@ body {
       color: variables.$link-action;
     }
   }
+
+  &-nav {
+    font-family: variables.$font-family-futura;
+    color: variables.$color-white-500;
+    font-style: normal;
+    text-align: left;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    transition: color 0.5s ease;
+
+    &:hover {
+      color: variables.$link-hover;
+    }
+
+    &:active {
+      color: variables.$link-action;
+    }
+  }
 }
 
 .swiper-button-next, .swiper-button-prev {

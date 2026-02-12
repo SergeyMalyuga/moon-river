@@ -40,6 +40,10 @@
       width: 100%;
       justify-content: center;
       align-items: center;
+
+      @media (width <= 760px) {
+        margin-bottom: 70px;
+      }
     }
 
     &-image {
